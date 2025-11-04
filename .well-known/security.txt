@@ -1,0 +1,5 @@
+Contact: mailto:hola@navidadsolidaria.site
+Encryption: https://keys.openpgp.org/
+Expires: 2026-12-31T23:59:59z
+Preferred-Languages: es, en
+Policy: https://navidad-solidaria.github.io/navidad-solidaria/
