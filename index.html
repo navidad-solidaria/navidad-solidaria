@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Navidad Solidaria | Dona por Bizum (602499030) — Ayuda a la infancia</title>
+  <meta name="description" content="Esta Navidad, dona por Bizum al 602499030 (titular: navidad solidaria). Recaudamos y enviamos a UNICEF, MSF, Save the Children, WFP, Cruz Roja y más. Transparencia total con comprobantes." />
+  <meta name="theme-color" content="#0A3D62" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Navidad Solidaria | Dona por Bizum (602499030)" />
+  <meta property="og:description" content="Dona desde 1 € por Bizum al 602499030 (titular: navidad solidaria). Transparencia total y destino a ONG reconocidas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://TU_USUARIO.github.io/navidad-solidaria/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1524499982521-1ffd58dd89ea?w=1200&q=80&auto=format&fit=crop" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Navidad Solidaria | Dona por Bizum (602499030)" />
+  <meta name="twitter:description" content="Dona desde 1 € por Bizum. Transparencia total y destino a ONG reconocidas." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1524499982521-1ffd58dd89ea?w=1200&q=80&auto=format&fit=crop" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Navidad Solidaria",
+    "url": "https://TU_USUARIO.github.io/navidad-solidaria/",
+    "description": "Iniciativa ciudadana de recaudación por Bizum para ayudar a la infancia en Navidad.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://TU_USUARIO.github.io/navidad-solidaria/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="topbar" role="region" aria-label="Donación rápida Bizum">
+    <div class="wrap">
+      <span>Donación por Bizum: <strong id="bizumTop">602499030</strong> · titular: <strong id="titularTop">navidad solidaria</strong></span>
+      <button class="btn btn-outline btn-copy" id="copyTop" aria-label="Copiar número Bizum">Copiar número</button>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="wrap header__inner">
+      <div class="logo">
+        <span aria-hidden="true">🎄</span>
+        <span class="logo__text">Navidad Solidaria</span>
+      </div>
+      <nav class="nav" aria-label="Principal">
+        <a href="#como-donar">Cómo donar</a>
+        <a href="#destino">A dónde va tu ayuda</a>
+        <a href="#transparencia">Transparencia</a>
+        <a href="#faqs">FAQs</a>
+        <button class="btn btn-primary" id="openDonateHeader">Donar por Bizum</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="wrap hero__inner">
+        <div class="hero__text">
+          <h1>Tu 1 € esta Navidad puede ser comida, un medicamento o un juguete.</h1>
+          <p class="lead">Dona por Bizum al <strong class="bizum-number">602499030</strong>. Titular: <strong class="bizum-titular">navidad solidaria</strong>. Rápido, seguro y desde tu app bancaria.</p>
+          <div class="cta">
+            <button class="btn btn-ghost donate-btn" data-amount="1">Donar 1 €</button>
+            <button class="btn btn-ghost donate-btn" data-amount="5">Donar 5 €</button>
+            <button class="btn btn-ghost donate-btn" data-amount="10">Donar 10 €</button>
+            <button class="btn btn-ghost donate-btn" data-amount="25">Donar 25 €</button>
+            <button class="btn btn-ghost donate-btn" data-amount="50">Donar 50 €</button>
+            <button class="btn btn-primary" id="copyHero">Copiar número Bizum</button>
+          </div>
+          <div class="trust">
+            <span>Sin intermediarios web · Publicamos comprobantes · Destino: ONG reconocidas</span>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?w=1200&q=80&auto=format&fit=crop" width="640" height="420" alt="Voluntaria entrega alimentos a una familia" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <section class="progress">
+      <div class="wrap">
+        <h2>Objetivo solidario</h2>
+        <p>Avance estimado de recaudación (actualizado manualmente).</p>
+        <div class="progressbar" aria-labelledby="progressLabel" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div class="progressbar__fill" id="progressFill"></div>
+        </div>
+        <div class="progress__meta">
+          <span id="progressLabel">Recaudado: <strong id="totalRecaudado">0 €</strong> / Objetivo: <strong id="objetivoTotal">0 €</strong></span>
+          <span class="muted">Última actualización: <span id="ultimaFecha">—</span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="como-donar" aria-labelledby="howTitle">
+      <div class="wrap">
+        <h2 id="howTitle">Cómo donar por Bizum</h2>
+        <ol class="steps">
+          <li>Abre la app de tu banco y entra en Bizum.</li>
+          <li>Elige “Enviar dinero”.</li>
+          <li>Introduce el número <strong class="bizum-number">602499030</strong>.</li>
+          <li>Verifica el titular: <strong class="bizum-titular">navidad solidaria</strong>.</li>
+          <li>Concepto: <strong id="concepto">Navidad Solidaria</strong>. Importe: desde 1 €.</li>
+        </ol>
+        <div class="note">
+          <strong>Seguridad:</strong> nunca te pediremos claves ni códigos. No sigas enlaces para iniciar Bizum; hazlo siempre desde tu app bancaria.
+        </div>
+        <div class="qr">
+          <img id="qrImage" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=Bizum%3A%20602499030" width="200" height="200" alt="QR informativo con el número de Bizum 602499030" loading="lazy" />
+          <div class="muted">El QR muestra el número; el envío se realiza en tu app bancaria.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="destino" id="destino">
+      <div class="wrap">
+        <h2>A dónde va tu ayuda</h2>
+        <p>Tu donación se enviará periódicamente a entidades con programas de infancia. Publicaremos cada envío con su comprobante. Algunas organizaciones a las que destinaremos fondos:</p>
+        <div class="ngo-grid">
+          <article class="ngo">
+            <h3>UNICEF</h3>
+            <p>Trabaja por los derechos de la infancia: salud, nutrición, educación y protección.</p>
+            <div class="ngo__links">
+              <a class="link" href="https://www.unicef.es" target="_blank" rel="noopener">Conóceles</a>
+              <a class="link" href="https://www.unicef.es/actualidad/transparencia" target="_blank" rel="noopener">Transparencia</a>
+            </div>
+          </article>
+          <article class="ngo">
+            <h3>Save the Children</h3>
+            <p>Protege a la infancia frente a la pobreza, conflictos y emergencias, en España y el mundo.</p>
+            <div class="ngo__links">
+              <a class="link" href="https://www.savethechildren.es" target="_blank" rel="noopener">Conóceles</a>
+              <a class="link" href="https://www.savethechildren.es/transparencia" target="_blank" rel="noopener">Transparencia</a>
+            </div>
+          </article>
+          <article class="ngo">
+            <h3>Médicos Sin Fronteras (MSF)</h3>
+            <p>Atención médica en crisis humanitarias y emergencias, sin discriminación.</p>
+            <div class="ngo__links">
+              <a class="link" href="https://www.msf.es" target="_blank" rel="noopener">Conóceles</a>
+              <a class="link" href="https://www.msf.es/quienes-somos/transparencia" target="_blank" rel="noopener">Transparencia</a>
+            </div>
+          </article>
+          <article class="ngo">
+            <h3>Programa Mundial de Alimentos (WFP)</h3>
+            <p>Agencia de la ONU contra el hambre: asistencia alimentaria y nutrición.</p>
+            <div class="ngo__links">
+              <a class="link" href="https://www.wfp.org/es" target="_blank" rel="noopener">Conóceles</a>
+              <a class="link" href="https://www.wfp.org/es/finanzas" target="_blank" rel="noopener">Transparencia</a>
+            </div>
+          </article>
+          <article class="ngo">
+            <h3>Cruz Roja</h3>
+            <p>Acción humanitaria, salud y apoyo social a personas vulnerables.</p>
+            <div class="ngo__links">
+              <a class="link" href="https://www.cruzroja.es" target="_blank" rel="noopener">Conóceles</a>
+              <a class="link" href="https://transparencia.cruzroja.es" target="_blank" rel="noopener">Transparencia</a>
+            </div>
+          </article>
+          <article class="ngo">
+            <h3>Aldeas Infantiles SOS</h3>
+            <p>Apoyo a niños y niñas sin cuidado parental o en riesgo de perderlo.</p>
+            <div class="ngo__links">
+              <a class="link" href="https://www.aldeasinfantiles.es" target="_blank" rel="noopener">Conóceles</a>
+              <a class="link" href="https://www.aldeasinfantiles.es/transparencia" target="_blank" rel="noopener">Transparencia</a>
+            </div>
+          </article>
+          <article class="ngo">
+            <h3>Plan International</h3>
+            <p>Igualdad para las niñas y protección infantil en más de 70 países.</p>
+            <div class="ngo__links">
+              <a class="link" href="https://plan-international.es" target="_blank" rel="noopener">Conóceles</a>
+              <a class="link" href="https://plan-international.es/transparencia" target="_blank" rel="noopener">Transparencia</a>
+            </div>
+          </article>
+          <article class="ngo">
+            <h3>Cáritas</h3>
+            <p>Acción social y caritativa con foco en inclusión, vivienda, empleo y apoyo básico.</p>
+            <div class="ngo__links">
+              <a class="link" href="https://www.caritas.es" target="_blank" rel="noopener">Conóceles</a>
+              <a class="link" href="https://transparencia.caritas.es" target="_blank" rel="noopener">Transparencia</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="transparency" id="transparencia">
+      <div class="wrap">
+        <h2>Transparencia</h2>
+        <p>Publicamos cada envío a ONG con fecha, importe, destinatario y comprobante (captura). Repartimos priorizando alimentos, medicamentos y juguetes.</p>
+        <div class="ledger">
+          <table aria-describedby="ledgerDesc">
+            <caption id="ledgerDesc" class="sr-only">Listado de envíos a ONG</caption>
+            <thead>
+              <tr>
+                <th scope="col">Fecha</th>
+                <th scope="col">Importe</th>
+                <th scope="col">Destinatario</th>
+                <th scope="col">Comprobante</th>
+              </tr>
+            </thead>
+            <tbody id="ledgerBody">
+              <tr><td colspan="4" class="muted">Sin registros todavía.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="note">
+          Frecuencia prevista: semanal. Cada envío se publica en 24–72 horas con su comprobante.
+        </div>
+      </div>
+    </section>
+
+    <section class="help" id="ayudar">
+      <div class="wrap">
+        <h2>Otras formas de ayudar</h2>
+        <ul class="help__list">
+          <li>
+            <button class="btn btn-outline" id="shareBtn">Compartir esta web</button>
+          </li>
+          <li>Voluntariado: consulta opciones en las webs oficiales de las ONG listadas.</li>
+          <li>Donar directamente en las ONG: si lo prefieres, usa sus páginas de donación oficiales.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="faqs" id="faqs">
+      <div class="wrap">
+        <h2>Preguntas frecuentes</h2>
+        <details>
+          <summary>¿Cómo hago la donación por Bizum?</summary>
+          <p>Entra en Bizum desde la app de tu banco, pulsa “Enviar dinero”, introduce <strong>602499030</strong>, verifica el titular <strong>navidad solidaria</strong>, pon concepto <strong>Navidad Solidaria</strong> y el importe que quieras (desde 1 €).</p>
+        </details>
+        <details>
+          <summary>¿El pago es seguro?</summary>
+          <p>Sí, Bizum opera dentro de tu banco. Nunca te pediremos claves ni códigos. Haz el envío desde tu app y verifica el titular antes de confirmar.</p>
+        </details>
+        <details>
+          <summary>¿Recibiré un recibo para desgravar?</summary>
+          <p>No. Esta recaudación no emite certificado fiscal. Si necesitas deducción, dona directamente en la web oficial de la ONG que
