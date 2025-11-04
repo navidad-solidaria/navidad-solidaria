@@ -1,0 +1,1 @@
+{ "name": "Navidad Solidaria", "short_name": "Navidad Solidaria", "start_url": ".", "display": "standalone", "background_color": "#FAFBFC", "theme_color": "#0A3D62", "icons": [{ "src": "assets/icons/favicon.svg", "sizes": "64x64", "type": "image/svg+xml" }] }
